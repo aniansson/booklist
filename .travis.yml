@@ -7,13 +7,13 @@ before_script:
   - bundle exec rails db:migrate
 services:
   - postgresql
-deploy:
-  provider: heroku
-  api_key:
-    secure:
-  app:
-    develop:
-  on:
-    repo:
-  run:
-    - bundle exec rake db:migrate
+#deploy:
+#  provider:
+#  api_key:
+#    secure:
+#  app:
+#    deployment:
+#  on:
+#    repo:
+#  run:
+#    - bundle exec rake db:migrate
