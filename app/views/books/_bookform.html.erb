@@ -1,0 +1,6 @@
+<%= simple_form_for @books do |f| %>
+    <%= f.input :title, label: 'Title of the Book', error: 'The book has to have a title' %>
+    <%= f.input :author, label: 'Author of the Book', error: 'The book has to have an author' %>
+    <%= f.input :description, label: 'Explain the book in three sentences' %>
+    <%= f.button :submit %>
+<% end %>
